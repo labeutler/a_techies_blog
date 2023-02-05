@@ -96,6 +96,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 * [BCrypt Package Link](https://www.npmjs.com/package/bcrypt)
 * [Express-Session Link](https://www.npmjs.com/package/express-session)
 * [Connect-Session-Sequelize Link](https://www.npmjs.com/package/connect-session-sequelize)
+* [Cookie helper](https://expressjs.com/en/resources/middleware/session.html)
+
 
 
 
@@ -112,7 +114,7 @@ If you followed tutorials, include links to those here as well.
 
 ---
 
-# First Steps
+## First Steps
 
 * Open Integrated Terminal and install the following </br>
 
@@ -138,3 +140,30 @@ npm install express-session </br>
 
 * Install Connect session sequelize </br>
 npm install connect-session-sequelize </br>
+
+## Files Needed to Complete App
+
+* Controller
+API's
+- user
+- post
+- comments
+- index.js
+index.js
+dashboar
+home-routs
+* db
+schema.sql
+* models
+index.js
+User
+Post
+Comments
+* views (hold the handlebars)
+main-handlebars
+add-post
+signup
+login
+new-post
+edit-post
+all-post
