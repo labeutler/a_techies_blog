@@ -88,6 +88,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
+* Use of Mini Project for assistanct
 * [Model-View-Controller paradigm example](https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/)
 * [Express-Handlebars Link](https://www.npmjs.com/package/express-handlebars)
 * [MySQL2 Link](https://www.npmjs.com/package/mysql2)
@@ -98,6 +99,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 * [Connect-Session-Sequelize Link](https://www.npmjs.com/package/connect-session-sequelize)
 * [Cookie helper](https://expressjs.com/en/resources/middleware/session.html)
 * [Understanding JawsDB](https://devcenter.heroku.com/articles/jawsdb#:~:text=JawsDB%20is%20a%20MySQL%2FMariaDB,for%20use%20with%20your%20application.)
+* [Understanding Hooks](https://sequelize.org/docs/v6/other-topics/hooks/)
 
 
 
