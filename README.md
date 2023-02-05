@@ -97,6 +97,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 * [Express-Session Link](https://www.npmjs.com/package/express-session)
 * [Connect-Session-Sequelize Link](https://www.npmjs.com/package/connect-session-sequelize)
 * [Cookie helper](https://expressjs.com/en/resources/middleware/session.html)
+* [Understanding JawsDB](https://devcenter.heroku.com/articles/jawsdb#:~:text=JawsDB%20is%20a%20MySQL%2FMariaDB,for%20use%20with%20your%20application.)
 
 
 
