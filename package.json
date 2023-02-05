@@ -1,0 +1,29 @@
+{
+  "name": "a_techies_blog",
+  "version": "1.0.0",
+  "description": "This is a site that will allow people with tech knowledge to share their knowledge, while enjoying learning from those around them.  You should be able to publish articles, write blog posts or just share your thoughts or oppinions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\","
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labeutler/a_techies_blog.git"
+  },
+  "author": "Laura Beutler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/labeutler/a_techies_blog/issues"
+  },
+  "homepage": "https://github.com/labeutler/a_techies_blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.1.0",
+    "sequelize": "^6.28.0"
+  }
+}

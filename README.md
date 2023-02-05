@@ -117,14 +117,14 @@ If you followed tutorials, include links to those here as well.
 * Open Integrated Terminal and install the following </br>
 
 * Install Express Handlebars </br>
-$ npm install express-handlebars </br>
+npm install express-handlebars </br>
 
 * Install MySQL2  </br>
 npm install --save mysql2 </br>
 
 * Install Sequelize </br>
 npm install --save sequelize </br>
-$ npm install --save mysql2 </br>
+npm install --save mysql2 </br>
 
 * Install dotenv </br>
 npm install dotenv --save </br>
@@ -133,8 +133,8 @@ npm install dotenv --save </br>
 npm install bcrypt </br>
 
 * Install Express </br>
-$ npm install express-session </br>
+npm install express-session </br>
 'var session = require('express-session')' will be used to call </br>
 
 * Install Connect session sequelize </br>
-$ npm install connect-session-sequelize </br>
+npm install connect-session-sequelize </br>
