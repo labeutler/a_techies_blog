@@ -4,7 +4,8 @@
   "description": "This is a site that will allow people with tech knowledge to share their knowledge, while enjoying learning from those around them.  You should be able to publish articles, write blog posts or just share your thoughts or oppinions.",
   "main": "index.js",
   "scripts": {
-    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\","
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\",",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

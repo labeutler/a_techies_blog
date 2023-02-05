@@ -100,6 +100,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 * [Cookie helper](https://expressjs.com/en/resources/middleware/session.html)
 * [Understanding JawsDB](https://devcenter.heroku.com/articles/jawsdb#:~:text=JawsDB%20is%20a%20MySQL%2FMariaDB,for%20use%20with%20your%20application.)
 * [Understanding Hooks](https://sequelize.org/docs/v6/other-topics/hooks/)
+* [Router Help](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes)
+
 
 
 
