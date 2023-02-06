@@ -1,0 +1,21 @@
+{{!-- Create an HTML card for handlebars to make a new post --}}
+<div class="post card">
+    <div class="card-header">
+        <h2>Creat a post</h2>
+    </div>
+    <form id="newPost-form" class="card-body">
+        <div class="form-group">
+            <label for="post-title">Title</label>
+            <input class="form-input" name="post-title" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="post-body">Description</label>
+            <input class="form-input" name="post-body" type="text" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Create</button>
+        </div>
+    </form>
+</div>
+
+<script src="/js/newPost.js"></script>

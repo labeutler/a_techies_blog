@@ -45,6 +45,7 @@ router.get('/post/:id', async (req, res) => {
     }
 });
 
+// If logging in 
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
         res.redirect('/');
@@ -52,3 +53,13 @@ router.get('/login', (req, res) => {
     }
     res.render('login');
 });
+
+// If signing up
+router.get('/signup', (req, res) => {
+    if (req.session.logged_in) {
+        res.redirect('/');
+        return;
+    }
+    res.render('signup');
+});
+module.exports = router;

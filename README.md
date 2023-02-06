@@ -101,8 +101,9 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 * [Understanding JawsDB](https://devcenter.heroku.com/articles/jawsdb#:~:text=JawsDB%20is%20a%20MySQL%2FMariaDB,for%20use%20with%20your%20application.)
 * [Understanding Hooks](https://sequelize.org/docs/v6/other-topics/hooks/)
 * [Router Help](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes)
-
-
+* [Edit Post in Handlebars](https://stackoverflow.com/questions/71327680/trying-to-update-the-body-of-a-blog-post-using-sequelize-and-handlebars-js)
+* [Adding Comment via Handlebars](https://stackoverflow.com/questions/49416853/adding-comment-features-to-blog-using-express-and-handlebars)
+* [Handlebar Helpers](https://handlebarsjs.com/guide/builtin-helpers.html#each)
 
 
 
@@ -161,9 +162,18 @@ home-routs
 schema.sql
 * models
 index.js
+- post - belongs to what user
+- post - has many comments
+- comment - belongs to what user
 User
+- id
+- username
+- password
 Post
+- title
+- description
 Comments
+- description
 * views (hold the handlebars)
 main-handlebars
 add-post

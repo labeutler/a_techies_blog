@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Post } = require('../models/');
 //Requiring to be logged in to complete
-const withAuth = required('../utils/aut');
+const withAuth = require('../utils/auth');
 
 //Router needs to GET ALL data
 router.get('/', withAuth, async (req, res) => {
