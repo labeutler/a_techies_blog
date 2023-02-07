@@ -47,7 +47,7 @@ router.get('/post/:id', async (req, res) => {
 
 // If logging in 
 router.get('/login', (req, res) => {
-    if (req.session.logged_in) {
+    if (req.session.loggedIn) {
         res.redirect('/');
         return;
     }

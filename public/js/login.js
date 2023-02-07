@@ -20,7 +20,7 @@ const loginFormHandler = async (event) => {
         } else {
             alert('Please try logging in again.');
         }
-    };
+    }
 }
 
 document

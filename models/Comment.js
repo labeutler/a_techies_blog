@@ -12,7 +12,7 @@ Comment.init(
     },
     {
         sequelize,
-        timestamps: false,
+        // timestamps: false,
     },
 );
 module.exports = Comment;

@@ -20,7 +20,7 @@ const signupFormHandler = async (event) => {
         } else {
             alert('Please try signing up again.');
         }
-    };
+    }
 }
 
 document

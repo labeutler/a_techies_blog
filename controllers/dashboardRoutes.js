@@ -8,7 +8,7 @@ router.get('/', withAuth, async (req, res) => {
     try {
         const postData = await Post.findAll({
             where: {
-                user_id: req.session.user_id,
+                userId: req.session.userId,
             },
         });
         // Data needs to be serialized so it can be read
