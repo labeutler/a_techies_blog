@@ -14,24 +14,22 @@
         <ul>
             <li class="li-inline nav-item"><a href="/">Home</a></li>
             <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-            <li class="li-inline nav-item"><a href="/login">Login</a></li>
             <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
         </ul>
     </nav>
     {{!-- Create Header --}}
     <header class="jumbotron">
-        <hi class="title"><a href="/">A Techies Blog</a></hi>
+        <hi class="title"><a href="/dashboard">Your Personal Dashboard</a></hi>
     </header>
 
-    {{!-- Assign where handlebars will publish --}}
-    <main class="container container-fluid mt-5">
-        {{{ body }}}
+    <main class="col-auto">
+        {{{body}}}
     </main>
-
-    {{!-- Add footer --}}
+</body>
+{{!-- Add footer --}}
     <footer class="flex-row justify-center">
+        <a href="/dashboard/new">Add A New Post</a>
         &copy; Created With Love, LAB
     </footer>
-</body>
 <script src="/js/logout.js"></script>
 </html>

@@ -2,18 +2,18 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 //get all users
-router.get('/', (req, res) => {
-    User.findAll({
-        attributes: {
-            exclude: ['password']
-        }
-    })
-    .then(userData => res.json(userData))
-    .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
-});
+// router.get('/', (req, res) => {
+//     User.findAll({
+//         attributes: {
+//             exclude: ['password']
+//         }
+//     })
+//     .then(userData => res.json(userData))
+//     .catch(err => {
+//         console.log(err);
+//         res.status(500).json(err);
+//     });
+// });
 //creating a new a new user
 router.post('/', async (req, res) => {
     try {
@@ -48,7 +48,7 @@ router.post('/login', async (req, res) => {
             .json({ message: 'Incorrect login, please try again.' });
             return;
         }
-        const validPassword = await user.checkPassword(req.body.password);
+        const validPassword = user.checkPassword(req.body.password);
         if (!validPassword) {
             res.status(400)
             .json({ message: 'Incorrect login, please try again.' });
@@ -68,7 +68,7 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
-    if (req.session.looged_in) {
+    if (req.session.loggedIn) {
         req.session.destroy(() => {
             res.status(204).end();
         });

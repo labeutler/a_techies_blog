@@ -5,8 +5,8 @@ const loginFormHandler = async (event) => {
     const username = document.querySelector('#username-login').value;
     const password = document.querySelector('#password-login').value;
 
-    if (username && password) {
-        const response = await fetch(`/api/user/login`, {
+    // if (username && password) {
+        const response = await fetch('/api/user/login', {
             method: 'POST',
             body: JSON.stringify({ 
                 username: username, 
@@ -21,7 +21,7 @@ const loginFormHandler = async (event) => {
             alert('Please try logging in again.');
         }
     }
-}
+// }
 
 document
     .querySelector('#login-form')

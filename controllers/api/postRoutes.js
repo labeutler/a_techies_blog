@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
         },
         {
             model: Comment,
-            attributes: ["id", "comment", "post_id", "user_id", "created_at"],
+            attributes: ["id", "comment", "post_id", "userId", "created_at"],
             include: {
                 model: User,
                 attributes: ["name"],
@@ -37,7 +37,7 @@ router.post('/', withAuth, async (req, res) => {
     try {
         const newPost = await Post.create({
             ...body,
-            user_id: req.session.userId,
+            userId: req.session.userId,
         });
         res.status(200).json(newPost);
     } catch (err) {
@@ -70,7 +70,7 @@ router.delete('/:id', withAuth, async (req, res) => {
         Post.destroy({
             where: {
                 id: req.params.id,
-                // user_id: req.session.user_id,
+                // userId: req.session.userId,
             },
         })
         .then((updateData) => {
