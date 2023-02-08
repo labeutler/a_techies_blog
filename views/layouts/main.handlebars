@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Techies Blog</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 {{!-- Create a flex body --}}
-<body class="flex-column">
-    {{!-- create navigation bar at top --}}
-    <nav class="navbar">
-        <ul>
-            <li class="li-inline nav-item"><a href="/">Home</a></li>
-            <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-            <li class="li-inline nav-item"><a href="/login">Login</a></li>
-            <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
-        </ul>
-    </nav>
-    {{!-- Create Header --}}
-    <header class="hero">
-        <hi class="title"><a href="/">A Techies Blog</a></hi>
-    </header>
 
-    {{!-- Assign where handlebars will publish --}}
-    <main class="container container-fluid mt-5">
-        {{{body}}}
-    </main>
+<body>
+    <div class="wrapper" id="flex-column">
+        {{!-- Create Header --}}
+        <header class="hero">
+            <h1 class="title"><a href="/">A Techies Blog</a></h1>
 
-    {{!-- Add footer --}}
-    <footer class="flex-row justify-center">
-        &copy; Created With Love, LAB
-    </footer>
+            {{!-- create navigation bar at top --}}
+            <nav class="navbar">
+                <ul>
+                    <li class="li-inline nav-item"><a href="/">Home</a></li>
+                    <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+                    <li class="li-inline nav-item"><a href="/login">Login</a></li>
+                    {{!-- <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li> --}}
+                </ul>
+            </nav>
+        </header>
+
+        {{!-- Assign where handlebars will publish --}}
+        <main>
+            {{{body}}}
+        </main>
+
+        {{!-- Add footer --}}
+        <footer class="flex-row justify-center">
+            &copy; Created With Love, LAB
+        </footer>
+    </div>
 </body>
 <script src="/js/logout.js"></script>
+
 </html>

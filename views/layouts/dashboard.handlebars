@@ -12,8 +12,10 @@
 </head>
 
 {{!-- Create a flex body --}}
-<body class="flex-column">
+<body>
+    <div class="wrapper" id="flex-column">
     {{!-- create navigation bar at top --}}
+    <header class="hero"></header>
     <nav class="navbar">
         <ul class="flex-row">
             <li class="li-inline nav-item"><a href="/">Home</a></li>
@@ -22,17 +24,18 @@
         </ul>
     </nav>
     {{!-- Create Header --}}
-    <header class="hero">
+    
         <hi class="title"><a href="/dashboard">Your Personal Dashboard</a></hi>
     </header>
 
     <main class="col-auto">
         {{{body}}}
     </main>
+    </div>
 </body>
 {{!-- Add footer --}}
     <footer class="flex-row justify-center">
-        <a href="dashboard/new">Add A New Post</a>
+        <a href="/js/new.js">Add A New Post</a>
         &copy; Created With Love, LAB
     </footer>
 <script src="/js/logout.js"></script>

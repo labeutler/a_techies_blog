@@ -1,26 +1,25 @@
+<a href="/dashboard" class="go-back"> &larr; Back to dashboard</a>
+
 {{!-- Create an HTML card for handlebars to make a new post --}}
-<div class="post card">
-    <div class="card-header">
+<article class="new-page">
+
+
+    <div class="form-heading">
         <h2>Creat A New Post</h2>
     </div>
-    <form id="newPost-form" class="card-body">
-        <div class="form-group">
-            <label for="post-title">Title</label>
-            <input class="form-input" name="post-title" type="text" />
-        </div>
-        <div class="form-group">
-            <label for="post-body">Description</label>
-            <textarea class="form-input" name="post-body" type="text"></textarea>
-        </div>
-        <div class="form-group">
+    <div class="form-section">
+        <form id="newPost-form" class="card-body">
+            <div class="form-group">
+                <label for="post-title">Title</label>
+                <input class="form-input" name="post-title" type="text" />
+            </div>
+            <div class="form-sections">
+                <label for="post-body">Description</label>
+                <textarea class="form-input" name="post-body" type="text"></textarea>
+            </div>
             <button class="btn btn-primary" type="submit">Create</button>
-        </div>
-    </form>
-</div>
-{{!-- <div>
-    {{#each posts as |post| }}
-    <h3>{{post.title}}</h3>
-    {{/each}}
-</div> --}}
 
+        </form>
+    </div>
+</article>
 <script src="/js/new.js"></script>

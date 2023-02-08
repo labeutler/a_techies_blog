@@ -8,23 +8,23 @@ html {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #333;
+    color: #c60c0c;
 }
 
 main,
 .site-name {
-    background-color: #b8cba2;
+    background-color: #c3b5b5;
 }
 
 a,
 .btn-no-style,
 #comment-subtitle {
-    color: #b8cba2;
+    color: #db0808;
 }
 
 a:hover,
 .btn-no-style:hover {
-    color: #e2edd5;
+    color: #f5c0c0;
 }
 
 a {
@@ -34,7 +34,7 @@ a {
 }
 
 button {
-    background-color: #225ca3;
+    background-color: #c60c0c;
     border: 0;
     padding: 1%;
     color: white;
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #3486eb;
+    background-color: #f9cccc;
 }
 
 .post-list {
@@ -91,6 +91,7 @@ form label {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    background-color: #d41414;
 }
 
 .info-section {
@@ -103,7 +104,7 @@ header,
 .site-row,
 .info-section,
 .form-heading {
-    background-color: #2c2307;
+    background-color: #240303;
 }
 
 .login-page,
@@ -113,6 +114,7 @@ header,
     border: 3px solid black;
     padding-bottom: 10px;
 }
+
 
 .form-heading {
     padding: 10px;
@@ -192,7 +194,7 @@ main {
 .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: #f95b5b;
 }
 
 .edit-link {
