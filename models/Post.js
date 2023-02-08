@@ -9,7 +9,7 @@ Post.init(
         title: {
             type: DataTypes.STRING,
         },
-        comment: {
+        body: {
             type: DataTypes.STRING,
         },
     },

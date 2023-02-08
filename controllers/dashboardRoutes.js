@@ -16,8 +16,8 @@ router.get('/', withAuth, async (req, res) => {
             plain: true
         }));
         console.log(posts);
-        res.render('newPost', {
-           
+        res.render('admin', {
+            layout: 'dashboard',
             posts,
         });
     } catch (err) {
@@ -27,7 +27,7 @@ router.get('/', withAuth, async (req, res) => {
 
 router.get('/new', withAuth, (req, res) => {
     res.render('new-post', {
-        layout: 'dashboar',
+        layout: 'dashboard',
     });
 });
 

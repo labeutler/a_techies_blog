@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
     <title>A Techies Blog</title>
 </head>
 
@@ -11,14 +15,14 @@
 <body class="flex-column">
     {{!-- create navigation bar at top --}}
     <nav class="navbar">
-        <ul>
+        <ul class="flex-row">
             <li class="li-inline nav-item"><a href="/">Home</a></li>
             <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
             <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
         </ul>
     </nav>
     {{!-- Create Header --}}
-    <header class="jumbotron">
+    <header class="hero">
         <hi class="title"><a href="/dashboard">Your Personal Dashboard</a></hi>
     </header>
 
@@ -28,7 +32,7 @@
 </body>
 {{!-- Add footer --}}
     <footer class="flex-row justify-center">
-        <a href="/dashboard/new">Add A New Post</a>
+        <a href="dashboard/new">Add A New Post</a>
         &copy; Created With Love, LAB
     </footer>
 <script src="/js/logout.js"></script>

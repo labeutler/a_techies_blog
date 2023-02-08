@@ -18,7 +18,7 @@ const editFormHandler = async function (event) {
         await fetch(`/api/post/${postId}`, {
             method: 'DELETE',
         });
-        document.location.reload('/dashboard');
+        document.location.replace('/dashboard');
     };
 
 // If they are leaving a comment and updating

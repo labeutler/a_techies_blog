@@ -105,6 +105,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 * [Adding Comment via Handlebars](https://stackoverflow.com/questions/49416853/adding-comment-features-to-blog-using-express-and-handlebars)
 * [Handlebar Helpers](https://handlebarsjs.com/guide/builtin-helpers.html#each)
 
+* Chris Baird, Tutor
 
 
 

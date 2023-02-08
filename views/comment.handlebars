@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="card-body">
-        {{post.comment}}
+        {{post.body}}
     </div>
 
     // If a comment is placed
@@ -27,12 +27,17 @@
     {{/if}}
 
     // Adding a comment to a post
-    <form id="newComment-form" method="POST" action="/comment">
-        <div class="input-field">
-            <label>Comment:</label>
-            <textarea type="text" name="comment"></textarea>
+    <form id="newComment-form" class="card">
+        <div class="card-header">
+            <h3>Add A New Comment></h3>
+            </div>
+            
+        <div class="card-body">
+            <input type="hidden" name="post-id" value="{{post.id}}" />
+            <label for="comment-body" class="form-label">Comment:</label>
+            <textarea type="text" name="comment-body" class="form-input"></textarea>
         </div>
-        <input type="hidden" name="post-id" value="{{post.id}}">
+        <input type="hidden" name="post-id" value="{{post.id}}" />
         <button type="submit">Add Comment</button>
     </form>
 </div>
