@@ -1,6 +1,35 @@
 const router = require('express').Router();
-const { Post } = require('../../models/');
+const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
+
+
+// Get Posts
+router.get('/', (req, res) => {
+    Post.findAll({
+        attributes: ["id", "content", "title", "created_at"],
+        order: [
+            ["created_at", "DESC"]
+        ],
+        include: [{
+            model: User,
+            attributes: ["name"],
+        },
+        {
+            model: Comment,
+            attributes: ["id", "comment", "post_id", "user_id", "created_at"],
+            include: {
+                model: User,
+                attributes: ["name"],
+            },
+        },
+    ],
+    })
+    .then((updateData) => res.json(updateData))
+    .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
 
 // create a new post
 router.post('/', withAuth, async (req, res) => {
@@ -36,21 +65,26 @@ router.put('/:id', withAuth, async (req, res) => {
 
 // delete a post
 router.delete('/:id', withAuth, async (req, res) => {
-    try {
-        const updateData = await Post.destroy({
+    // try {
+    //     const updateData = await 
+        Post.destroy({
             where: {
                 id: req.params.id,
                 // user_id: req.session.user_id,
             },
-        });
+        })
+        .then((updateData) => {
         if (!updateData) {
             res.status(404).json({ message: 'Post not found with this ID.' });
             return;
         }
-        res.status(200).end();
-    } catch (err) {
+        // res.status(200).end();
+        res.json(updateData);
+    })
+    .catch ((err) => {
+        console.log(err);
         res.status(500).json(err);
-    }
+    });
 });
 
 module.exports = router;

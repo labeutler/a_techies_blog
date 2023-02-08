@@ -1,17 +1,18 @@
-const { Sequelize, Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Comment extends Model {}
 
 Comment.init(
     {
-        description: {
+        comment: {
             type: DataTypes.STRING,
             allowNull: false,
         },
     },
     {
         sequelize,
+        modelName: 'comment'
         // timestamps: false,
     },
 );

@@ -6,24 +6,19 @@
     {{!-- edit title --}}
     <form id="editPost-form" class="card-body">
         <div class="form-group">
+            input type="hidden" name="post-id" value="{{post.id}}" />
             <label for="post-title">Title</label>
             <input name="post-title" class="form-input" value="{{post.title}}" type="text" />
         </div>
         <div>
-        <textarea name="post-title">{{post.post_title}}</textarea>
+        <label class="form-label" for="post-body">Content</label>
+        <textarea name="post-body" class="form-input">{{post.comment}}</textarea>
         </div>
-    {{!-- edit body --}}
-        <div class="form-group">
-            <label for="post-text">Description</label>
-            <input class="form-input" name="post-body" type="text" />
-            <textarea name="post-text">{{post.post_text}}</textarea>
-        </div>
-
-        <div class="form-group">
+         <div class="form-group">
             <button class="btn btn-primary" type="submit">Update</button>
              <button class="btn btn-primary" id="deleteBtn" type="delete">Delete</button>
         </div>
     </form>
 </div>
 
-<script src="/js/editPost.js"></script>
+<script src="/js/edit.js"></script>

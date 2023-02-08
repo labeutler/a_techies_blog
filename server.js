@@ -16,7 +16,8 @@ const hbs = exphbs.create({ helpers });
 
 // Cookie requirements
 const sess = {
-    secret: process.env.DB_SECRET,
+    // secret: process.env.DB_SECRET,
+    secret: 'Super secret secret',
     cookie: {
         maxAge: 300000,
         httpOnly: true,
@@ -43,7 +44,7 @@ app.use(routes);
 // app.use(require('./controllers/'));
 
 //Confirm listening
-sequelize.sync();
+sequelize.sync({ force: false });
 
 app.listen(PORT, () => {
     console.log(`App now listening on port ${PORT}.`);

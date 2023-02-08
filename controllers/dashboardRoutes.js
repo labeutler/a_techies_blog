@@ -8,15 +8,16 @@ router.get('/', withAuth, async (req, res) => {
     try {
         const postData = await Post.findAll({
             where: {
-                userId: req.session.userId,
+                id: req.session.userId,
             },
         });
         // Data needs to be serialized so it can be read
         const posts = postData.map((post) => post.get({
             plain: true
         }));
-        res.render('all-posts-admin', {
-            layout: 'dashboard',
+        console.log(posts);
+        res.render('newPost', {
+           
             posts,
         });
     } catch (err) {

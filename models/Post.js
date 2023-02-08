@@ -9,12 +9,13 @@ Post.init(
         title: {
             type: DataTypes.STRING,
         },
-        description: {
+        comment: {
             type: DataTypes.STRING,
         },
     },
     {
         sequelize,
+        modelName: 'post'
         // timestamps: false,
     },
 );

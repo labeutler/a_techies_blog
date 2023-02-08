@@ -1,6 +1,19 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+//get all users
+router.get('/', (req, res) => {
+    User.findAll({
+        attributes: {
+            exclude: ['password']
+        }
+    })
+    .then(userData => res.json(userData))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
 //creating a new a new user
 router.post('/', async (req, res) => {
     try {
@@ -17,6 +30,7 @@ router.post('/', async (req, res) => {
             res.status(200).json(newUser);
         });
     } catch (err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
