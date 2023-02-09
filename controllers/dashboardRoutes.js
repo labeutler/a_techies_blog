@@ -32,7 +32,7 @@ router.get('/newPost', withAuth, (req, res) => {
 });
 
 // GET ONE post to edit
-router.get('/edit/:id', withAuth, async (req, res) => {
+router.get('/editPost/:id', withAuth, async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
             include: [

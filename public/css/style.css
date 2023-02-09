@@ -4,7 +4,7 @@
 
 body,
 html {
-    height: 100%;
+    height: 90%;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -19,7 +19,7 @@ main,
 a,
 .btn-no-style,
 #comment-subtitle {
-    color: #db0808;
+    color: #1f1313;
 }
 
 a:hover,
@@ -35,11 +35,11 @@ a {
 
 button {
     background-color: #c60c0c;
-    border: 0;
+    border-radius: 15%;
     padding: 1%;
     color: white;
     font-weight: bold;
-    transition: background-color .1s;
+    transition: background-color .1s; 
     cursor: pointer;
     border-radius: 5px;
 }
@@ -104,7 +104,7 @@ header,
 .site-row,
 .info-section,
 .form-heading {
-    background-color: #240303;
+    background-color: #ad0707;
 }
 
 .login-page,
@@ -161,6 +161,22 @@ main {
     padding: 2% 4%;
 }
 
+.btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 50%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    /* color: var(--primary); */
+    border-radius: 50%;
+    outline: none;
+    /* background-color: var(--light-dark); */
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-1px, -1px);
+  }
+
 .btn-no-style {
     background: none;
     border: none;
@@ -176,6 +192,10 @@ main {
 .btn-no-style:hover {
     background: none;
 }
+
+.card-header h2 {
+    color: var(--primary);
+  }
 
 .delete-post-btn {
     background-color: #d41414;
@@ -267,3 +287,20 @@ main {
 #post-title {
     width: 100%;
 }
+
+
+.footer a {
+    justify-content: center;
+    display: inline-block;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    background-color: var(--dark);
+    color: var(--primary);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+  }
+
+footer {
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+}  
