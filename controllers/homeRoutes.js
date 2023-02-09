@@ -36,7 +36,7 @@ router.get('/post/:id', async (req, res) => {
         
         if (postData) {
             const post = postData.get({ plain: true });
-        res.render('single-post', { post });
+        res.render('comment', { post });
         } else {
             //If unable to locate the file
            res.status(404).end() ;

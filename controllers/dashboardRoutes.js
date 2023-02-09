@@ -25,8 +25,8 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
-router.get('/new', withAuth, (req, res) => {
-    res.render('new-post', {
+router.get('/newPost', withAuth, (req, res) => {
+    res.render('newPost', {
         layout: 'dashboard',
     });
 });
@@ -46,7 +46,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
         
         if (postData) {
             const post = postData.get({ plain: true });
-        res.render('edit-post', { 
+        res.render('editPost', { 
             layout: 'dashboard', 
             post,
         });
