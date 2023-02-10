@@ -15,8 +15,6 @@ Post.init(
     },
     {
         sequelize,
-        // modelName: 'post'
-        // timestamps: false,
     },
 );
 module.exports = Post;

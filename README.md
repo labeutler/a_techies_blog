@@ -1,16 +1,27 @@
 # A Techies Blog
 
+## Table of Contents (Optional)
+
+If your README is long, add a table of contents to make it easy for users to find what they need.
+
+- [Links](#links-for-app-and-github)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Links for App and GitHub
+
+* [Personal GitHub](https://github.com/labeutler?tab=repositories)
+* [GitHub Repository](https://github.com/labeutler/a_techies_blog)
+* Deployed[Heroku]() Link
+
 ## Description
 
 This is a site that will allow people with tech knowledge to share their knowledge, while enjoying learning from those around them.  You should be able to publish articles, write blog posts or just share your thoughts or oppinions.
 
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This project has really given me some serious challenges.  I was able to utilize my instructor, TA's, tutor and BCS for assistance. I even leaned on a fellow student.  In the end, I finally got the majority of it and I'm thrilled.  
 
 ### User Story
 
@@ -76,7 +87,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+In order to view the app, please click on the link above, listed in links.
 
 ## Usage
 
@@ -106,14 +117,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 * [Handlebar Helpers](https://handlebarsjs.com/guide/builtin-helpers.html#each)
 
 * Chris Baird, Tutor
-
-
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+* Ask BCS
+* Instructor and TA's
 
 ## License
 

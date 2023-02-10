@@ -3,34 +3,6 @@ const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
-// Get Posts
-// router.get('/', (req, res) => {
-//     Post.findAll({
-//         attributes: ["id", "comment", "title", "created_at"],
-//         order: [
-//             ["created_at", "DESC"]
-//         ],
-//         include: [{
-//             model: User,
-//             attributes: ["name"],
-//         },
-//         {
-//             model: Comment,
-//             attributes: ["id", "comment", "post_id", "userId", "created_at"],
-//             include: {
-//                 model: User,
-//                 attributes: ["name"],
-//             },
-//         },
-//     ],
-//     })
-//     .then((affectedRows) => res.json(affectedRows))
-//     .catch((err) => {
-//         console.log(err);
-//         res.status(500).json(err);
-//     });
-// });
-
 // create a new post
 router.post('/', withAuth, (req, res) => {
     console.log("create a post")
@@ -44,16 +16,6 @@ router.post('/', withAuth, (req, res) => {
         console.log(err);
         res.status(500).json(err);
     });
-    // const body = req.body;
-    // try {
-    //     const newPost = await Post.create({
-    //         ...body,
-    //         userId: req.session.userId,
-    //     });
-    //     res.json(newPost);
-    // } catch (err) {
-    //     res.status(400).json(err);
-    // }
 });
 
 // update a post
@@ -85,7 +47,6 @@ router.delete('/:id', withAuth, async (req, res) => {
             },
         });
 
-        // .then((affectedRows) => {
         if (affectedRows > 0) {
             res.status(200).end();
         } else {

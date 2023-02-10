@@ -12,8 +12,6 @@ Comment.init(
     },
     {
         sequelize,
-        // modelName: 'comment'
-        // timestamps: false,
     },
 );
 module.exports = Comment;
