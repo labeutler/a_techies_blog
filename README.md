@@ -89,17 +89,53 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 In order to view the app, please click on the link above, listed in links.
 
+
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+### When you open the link, you will be presented with the home screen. If you click on "Home", this is the same page that will present. You can use the other links, Dashboard, Login and Logout as well.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+![alt text](/public/css/images/Home.png)
 
-![alt text](assets/images/screenshot.png)
+
+### When you click on Dashboard, you will be prompted to log in.
+
+![alt text](/public/css/images/Login.png)
+
+
+### If you don't already have an account, you may click on "Sign Up HERE!" Once you have created your username and password, you will be welcomed back and your blogs will still be here.
+
+![alt text](/public/css/images/Signup.png)
+
+
+### Once logged in, you will be taken to your personal dashboard where you will see your previously added items.
+
+![alt text](/public/css/images/Loggedin.png)
+
+
+### When you click on a blog title from the home page, you will be taken to the blog where you can read more and add comments.
+
+![alt text](/public/css/images/BlogFromHome.png)
+
+
+### You can see here that another comment has been added onto the post.
+
+![alt text](/public/css/images/CommentAdded.png)
+
+
+### If you would like to edit or delete your comment, you can do that by going to your dashboard, then slecting the item you'd like to adjust.
+
+![alt text](/public/css/images/EditDelete.png)
+
+
+### Once you delete an item, you are directed back to Your Personal Dashboard to see what is left.
+
+![alt text](/public/css/images/DeletedItem.png)
+
+
 
 ## Credits
 
-* Use of Mini Project for assistanct
+* Use of Mini Project for assistance
 * [Model-View-Controller paradigm example](https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/)
 * [Express-Handlebars Link](https://www.npmjs.com/package/express-handlebars)
 * [MySQL2 Link](https://www.npmjs.com/package/mysql2)
