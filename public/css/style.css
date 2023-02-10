@@ -31,7 +31,23 @@ a {
     text-decoration: none;
     font-weight: bold;
     transition: color .1s;
+    justify-content: space-between;
+    /* padding: 5%; */
 }
+
+.list-group {
+    padding: 5%;
+    justify-content: space-between;
+}
+
+.list-item {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: var(--border-radius);
+    background-color: var(--light-dark);
+    color: var(--primary);
+    text-decoration: none;
+  }
 
 button {
     background-color: #c60c0c;
@@ -52,6 +68,7 @@ button:hover {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
 }
 
 .go-back {
@@ -141,7 +158,12 @@ header {
 }
 
 header h1 {
+    justify-content: space-around;
     font-size: 1em;
+}
+
+.hero {
+    justify-content: space-evenly;
 }
 
 .site-row {
@@ -215,6 +237,7 @@ main {
     font-style: italic;
     font-size: 90%;
     color: #f95b5b;
+    
 }
 
 .edit-link {
@@ -273,6 +296,13 @@ main {
 .form-heading h2 {
     color: #b8cba2;
 }
+
+.justify-space-between {
+    justify-content: space-around;
+    
+    border: 10% black;
+    padding: 10% white;
+  }
 
 .login-form,
 .signup-form,

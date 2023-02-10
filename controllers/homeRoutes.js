@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
         const posts = postData.map((post) => post.get({
             plain: true
         }));
-        res.render('allPosts', { posts });
+        res.render('allPost', { posts });
        
     } catch (err) {
         console.log(err);

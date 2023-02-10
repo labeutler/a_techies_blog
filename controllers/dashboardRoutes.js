@@ -34,15 +34,16 @@ router.get('/newPost', withAuth, (req, res) => {
 // GET ONE post to edit
 router.get('/editPost/:id', withAuth, async (req, res) => {
     try {
-        const postData = await Post.findByPk(req.params.id, {
-            include: [
-                User,
-                {
-                    model: Comment,
-                    include: [User],
-                },
-            ],
-        });
+        const postData = await Post.findByPk(req.params.id); 
+        //     {
+        //     include: [
+        //         User,
+        //         {
+        //             model: Comment,
+        //             include: [User],
+        //         },
+        //     ],
+        // });
         
         if (postData) {
             const post = postData.get({ plain: true });

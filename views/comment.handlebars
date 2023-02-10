@@ -3,33 +3,36 @@
     <div class="card-header">
         <h2>{{post.title}}</h2>
         <div>
-            <p>Created by {{post.User.username}} on {{formatDate}}</p>
+            <p>Created by {{post.User.username}}</p>
         </div>
     </div>
     <div class="card-body">
         {{post.body}}
     </div>
 
-    // If a comment is placed
-    {{#if post.Comments}}
+  {{!-- If a comment is placed --}}
+    {{#if post.comments}}
     <section class="card">
         <div class="card-header">
             <h3>Comments</h3>
         </div>
         <div class="card-body">
-            {{#each post.Comments}}
+            {{#each post.comments}}
             <div>
                 <p>{{body}}</p>
+                <p>
+                    {{User.username}}, {{formatDate createdAt}}
+                </p>
             </div>
             {{/each}}
         </div>
     </section>
     {{/if}}
 
-    // Adding a comment to a post
+{{!-- Adding a comment to a post --}}
     <form id="newComment-form" class="card">
         <div class="card-header">
-            <h3>Add A New Comment></h3>
+            <h3>Add A New Comment</h3>
             </div>
             
         <div class="card-body">

@@ -24,7 +24,7 @@ const withAuth = require('../../utils/auth');
 //         },
 //     ],
 //     })
-//     .then((updateData) => res.json(updateData))
+//     .then((affectedRows) => res.json(affectedRows))
 //     .catch((err) => {
 //         console.log(err);
 //         res.status(500).json(err);
@@ -32,8 +32,9 @@ const withAuth = require('../../utils/auth');
 // });
 
 // create a new post
-router.post('/', withAuth, async (req, res) => {
+router.post('/', withAuth, (req, res) => {
     console.log("create a post")
+    const body = req.body;
     Post.create({
         ...body,
         userId: req.session.userId,
@@ -58,16 +59,16 @@ router.post('/', withAuth, async (req, res) => {
 // update a post
 router.put('/:id', withAuth, async (req, res) => {
     try {
-        const [updateData] = await Post.update(req.body, {
+        const [affectedRows] = await Post.update(req.body, {
             where: {
                 id: req.params.id,
             },
         });
-        if (!updateData) {
+        if (!affectedRows) {
             res.status(404).json({ message: 'Post not updated.' });
             return;
         }
-        res.status(200).json(updateData);
+        res.status(200).json(affectedRows);
     } catch (err) {
         res.status(500).json(err);
     }
@@ -76,7 +77,7 @@ router.put('/:id', withAuth, async (req, res) => {
 // delete a post
 router.delete('/:id', withAuth, async (req, res) => {
     try {
-        const [updateData] =  
+        const [affectedRows] =  
         Post.destroy({
             where: {
                 id: req.params.id,
@@ -84,13 +85,11 @@ router.delete('/:id', withAuth, async (req, res) => {
             },
         });
 
-        // .then((updateData) => {
-        if (!updateData) {
-            res.status(404).json({ message: 'Post not found with this ID.' });
-            return;
+        // .then((affectedRows) => {
+        if (affectedRows > 0) {
+            res.status(200).end();
         } else {
-        // res.status(200).end();
-        res.json(updateData);
+            res.status(404).end();
         }
     } catch (err) {
         console.log(err);
